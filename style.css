@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.quiz-container{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    width:95%;
+    max-width:600px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.answers button{
+    width:100%;
+    padding:12px;
+    margin:6px 0;
+    border-radius:8px;
+    border:1px solid #ddd;
+    background:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.answers button:hover{
+    background:#f1f1f1;
+}
+
+.selected{
+    background:#d0ebff !important;
+    border-color:#339af0;
+}
+
+.hidden{
+    display:none;
+}
+
+.progress-container{
+    width:100%;
+    height:10px;
+    background:#eee;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+#progressBar{
+    height:100%;
+    width:0%;
+    background:#4caf50;
+    border-radius:10px;
+}
+
+.nav-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+
+#reviewContainer{
+    margin-top:20px;
+}
+
+.review-item{
+    border-top:1px solid #eee;
+    padding:10px 0;
+}
+
+.correct-text{
+    color:green;
+}
+
+.user-text{
+    color:#0077cc;
+}
