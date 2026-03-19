@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MCQ Quiz App</title>
+<title>MCQ Board Exam System</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 <div class="quiz-container">
 
-    <h1>MCQ Quiz</h1>
+<h1>Board Exam Practice</h1>
 
-    <div class="progress-container">
-        <div id="progressBar"></div>
-    </div>
+<div class="top-bar">
+<div>Time Left: <span id="timer">00:00</span></div>
+<div>Score: <span id="scoreDisplay">0</span></div>
+</div>
 
-    <div id="questionNumber"></div>
-    <h3 id="question"></h3>
+<div class="progress-container">
+<div id="progress-bar"></div>
+</div>
 
-    <div id="answers" class="answers"></div>
+<h2 id="question"></h2>
 
-    <div class="nav-buttons">
-        <button id="backBtn">Back</button>
-        <button id="nextBtn" class="hidden">Next</button>
-    </div>
+<div id="answer-buttons"></div>
 
-    <button id="restartBtn" class="hidden">Restart</button>
+<p id="explanation"></p>
 
-    <div id="reviewContainer" class="hidden"></div>
+<button id="next-btn">Next</button>
+
+<h3>Question Navigator</h3>
+<div id="navigator"></div>
+
+<button id="submit-btn">Submit Exam</button>
+<button id="restart-btn">Restart</button>
+
+<div id="review-section"></div>
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
